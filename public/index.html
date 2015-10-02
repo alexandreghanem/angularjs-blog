@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-app="blogger">
+
+    <!-- Navigation -->
+    <ng-include src="'views/nav.html'"></ng-include>
+    
+    <!-- ngRoute -->
+    <div class="container">
+        <div class="row">         
+           <div class="col col-md-8">
+              <ng-view></ng-view>               
+           </div>
+           <div class="col col-md-4">
+               Panel
+           </div>            
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/filters.js"></script>
+    <script src="app/services/article.js"></script>
+    <script src="app/controllers/home.js"></script>
+    <script src="app/controllers/article.js"></script>
+    
+</body>
+</html>

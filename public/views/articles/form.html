@@ -1,0 +1,30 @@
+<ng-include src="'views/breadcrumb.html'"></ng-include>
+ 
+<form name="articleForm" ng-submit="save(articleForm, article)" novalidate>
+   
+    <div class="form-group">
+        <input type="text" name="title" minlength="2" maxlength="255" placeholder="Titre" ng-model="article.title" class="form-control"  required="true">
+    </div>
+    
+    <div class="form-group">
+        <textarea name="teaser" cols="30" rows="10" placeholder="Accroche" ng-model="article.teaser" class="form-control" required="true"></textarea>
+    </div>
+    
+    <div class="form-group">
+        <textarea name="content" cols="30" rows="10" placeholder="Contenu" ng-model="article.content" class="form-control" required="true"></textarea>
+    </div>
+    
+    <div class="form-group">
+        <input type="email" name="email" placeholder="Email" ng-model="article.email" class="form-control" required="true">
+    </div>
+    
+    <div>
+        <label>
+            <input type="checkbox" name="published" ng-model="article.published">
+            Publier
+        </label>
+    </div>
+    
+    <input type="submit" name="submit" value="Sauvegarder" class="btn btn-primary" ng-disabled="articleForm.$invalid">
+    
+</form>

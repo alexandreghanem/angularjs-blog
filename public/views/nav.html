@@ -1,0 +1,16 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">Aston</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <!-- ul>(li>a[href="#/"]{item})*4 -->
+            <ul class="nav navbar-nav" ng-controller="frontController">
+                <li ng-class="{active: isActive('/')}"><a href="#/">Accueil</a></li>
+                <li ng-class="{active: isActive('/blog/articles/add')}"><a href="#/blog/articles/add">Ajouter un article</a></li>
+                <li ng-class="{active: isActive('/blog/articles')}"><a href="#/blog/articles">Lister Les articles</a></li>
+                <li ng-class="{active: isActive('/')}"><a href="#/">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

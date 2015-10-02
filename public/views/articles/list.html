@@ -1,0 +1,11 @@
+<ng-include src="'views/breadcrumb.html'"></ng-include>
+
+
+<article ng-repeat="article in articles">
+    <!-- #/blog/article/{{ article.id }} -->
+    <h2><a href="#/blog/articles/show/{{ article.id }}">{{ article.title | capitalize }}</a></h2>
+    <hr>
+    <p>{{ article.teaser }}</p>
+    <a href="#/blog/articles/update/{{ article.id }}">Modifier</a>
+
+</article>

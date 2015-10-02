@@ -1,0 +1,12 @@
+<ng-include src="'views/breadcrumb.html'"></ng-include>
+
+
+<article>
+    <!-- #/blog/article/{{ article.id }} -->
+    <h2>{{ article.title | capitalize }}</h2>
+    <hr>
+    <p>{{ article.teaser }}</p>
+    <p>{{ article.content }}</p>
+    <a href="#/blog/articles/update/{{ article.id }}">Modifier</a>
+
+</article>

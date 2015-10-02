@@ -1,0 +1,65 @@
+{
+  "articles": [
+    {
+      "title": "toto",
+      "teaser": "test",
+      "content": "lorem ipsum",
+      "email": "test@toto.fr",
+      "id": 1
+    },
+    {
+      "title": "test",
+      "teaser": "test",
+      "content": "test test test",
+      "email": "toto@test.fr",
+      "published": true,
+      "id": 2
+    },
+    {
+      "title": "test test",
+      "teaser": "test test",
+      "content": "test test test",
+      "email": "test@ho.io",
+      "published": true,
+      "id": 3
+    },
+    {
+      "title": "test",
+      "teaser": "te",
+      "content": "test",
+      "email": "test@test",
+      "id": 4
+    },
+    {
+      "title": "toto",
+      "teaser": "toto",
+      "content": "toto",
+      "email": "toto@toto",
+      "published": true,
+      "id": 5
+    },
+    {
+      "title": "toto",
+      "teaser": "toto",
+      "content": "toto",
+      "published": true,
+      "email": "oto@toto",
+      "id": 6
+    },
+    {
+      "title": "test",
+      "teaser": "te",
+      "content": "test",
+      "email": "te@tte",
+      "id": 7
+    },
+    {
+      "title": "totot",
+      "teaser": "toto toto",
+      "content": "tot tototototototo",
+      "email": "toto@test.io",
+      "published": true,
+      "id": 8
+    }
+  ]
+}
